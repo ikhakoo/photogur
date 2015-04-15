@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   #show
   get 'pictures/:id' => 'pictures#show'
   #edit
-  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+  get 'pictures/:id/edit' => "pictures#edit"
   patch 'pictures/:id' => "pictures#update"
   #delete
   delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
