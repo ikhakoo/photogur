@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'pictures#index'
 
   resources :pictures
-  
+
   get 'pictures' => 'pictures#index'
   #create
   post 'pictures' => 'pictures#create' # this is a new line of code
