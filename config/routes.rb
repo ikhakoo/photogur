@@ -4,17 +4,19 @@ Rails.application.routes.draw do
 
   resources :pictures
 
-  get 'pictures' => 'pictures#index'
-  #create
-  post 'pictures' => 'pictures#create' # this is a new line of code
-  get 'pictures/new' => 'pictures#new' # this is also a new line of code
-  #show
-  get 'pictures/:id' => 'pictures#show'
-  #edit
-  get 'pictures/:id/edit' => "pictures#edit"
-  patch 'pictures/:id' => "pictures#update"
-  #delete
-  delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+  # get 'pictures' => 'pictures#index'
+  # #create
+  # post 'pictures' => 'pictures#create' # creates the new image
+  # get 'pictures/new' => 'pictures#new' # generates a new form
+  # #edit
+  # get 'pictures/:id/edit' => "pictures#edit"
+  # patch 'pictures/:id' => "pictures#update"
+
+  # #show
+  # get 'pictures/:id' => 'pictures#show'
+  
+  # #delete
+  # delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
